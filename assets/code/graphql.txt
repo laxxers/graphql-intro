@@ -1,0 +1,18 @@
+// graphql
+
+query on viewer {
+  user(id: "1") {
+    id,
+    name,
+    email,
+    orders(first: 100) {
+      id,
+      amount,
+      products(first: 100) {
+        id,
+        name,
+        price
+      }
+    }
+  }
+}

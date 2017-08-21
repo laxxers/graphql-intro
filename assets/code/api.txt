@@ -1,0 +1,42 @@
+// GET api/v1/users/1
+
+{
+  "id": 1,
+  "name": "John",
+  "email": "john@gmail.com",
+  "orders": [
+    "api/v1/orders/12,
+    "api/v1/orders/83,
+    "api/v1/orders/94,
+    ...    
+  ]
+}
+
+// GET api/v1/users/1/orders
+
+{
+  "id": 1,
+  "name": "John",
+  "email": "john@gmail.com",
+  "orders": [
+    {
+      "id": 12,
+      "amounts": 149,
+      "products": [
+        "api/v1/products/39",
+        "api/v1/products/4",
+        ...
+      ]
+    },
+    {
+      "id": 83,
+      "amounts": 294,
+      "products": [
+        "api/v1/products/86",
+        "api/v1/products/10",
+        ...
+      ]
+    }
+  ]
+}
+
